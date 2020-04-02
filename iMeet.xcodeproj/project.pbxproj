@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		83793B8B243376D2007DD493 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83793B8A243376D2007DD493 /* AppDelegate.swift */; };
 		83793B8D243376D2007DD493 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83793B8C243376D2007DD493 /* SceneDelegate.swift */; };
-		83793B8F243376D2007DD493 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83793B8E243376D2007DD493 /* ContentView.swift */; };
 		83793B91243376D3007DD493 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83793B90243376D3007DD493 /* Assets.xcassets */; };
 		83793B94243376D3007DD493 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83793B93243376D3007DD493 /* Preview Assets.xcassets */; };
 		83793B97243376D3007DD493 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83793B95243376D3007DD493 /* LaunchScreen.storyboard */; };
+		83793BA024337799007DD493 /* AddMeetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83793B9F24337799007DD493 /* AddMeetView.swift */; };
+		83793BA324337D90007DD493 /* CardBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83793BA224337D90007DD493 /* CardBackground.swift */; };
+		83793BA524338481007DD493 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83793BA424338481007DD493 /* Person.swift */; };
+		83793BA72433895C007DD493 /* PersonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83793BA62433895C007DD493 /* PersonManager.swift */; };
+		83793BA924338B83007DD493 /* MeetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83793BA824338B83007DD493 /* MeetView.swift */; };
+		83793BAB243394B3007DD493 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83793BAA243394B3007DD493 /* ImagePicker.swift */; };
+		83793BAD2433A9C9007DD493 /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83793BAC2433A9C9007DD493 /* PersonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		83793B87243376D2007DD493 /* iMeet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMeet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83793B87243376D2007DD493 /* iMet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83793B8A243376D2007DD493 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83793B8C243376D2007DD493 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		83793B8E243376D2007DD493 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		83793B90243376D3007DD493 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83793B93243376D3007DD493 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		83793B96243376D3007DD493 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83793B98243376D3007DD493 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83793B9F24337799007DD493 /* AddMeetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMeetView.swift; sourceTree = "<group>"; };
+		83793BA224337D90007DD493 /* CardBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBackground.swift; sourceTree = "<group>"; };
+		83793BA424338481007DD493 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		83793BA62433895C007DD493 /* PersonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonManager.swift; sourceTree = "<group>"; };
+		83793BA824338B83007DD493 /* MeetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetView.swift; sourceTree = "<group>"; };
+		83793BAA243394B3007DD493 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		83793BAC2433A9C9007DD493 /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +60,7 @@
 		83793B88243376D2007DD493 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				83793B87243376D2007DD493 /* iMeet.app */,
+				83793B87243376D2007DD493 /* iMet.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,13 +68,15 @@
 		83793B89243376D2007DD493 /* iMeet */ = {
 			isa = PBXGroup;
 			children = (
+				83793B9E24337781007DD493 /* Views */,
 				83793B8A243376D2007DD493 /* AppDelegate.swift */,
 				83793B8C243376D2007DD493 /* SceneDelegate.swift */,
-				83793B8E243376D2007DD493 /* ContentView.swift */,
 				83793B90243376D3007DD493 /* Assets.xcassets */,
 				83793B95243376D3007DD493 /* LaunchScreen.storyboard */,
 				83793B98243376D3007DD493 /* Info.plist */,
 				83793B92243376D3007DD493 /* Preview Content */,
+				83793BA424338481007DD493 /* Person.swift */,
+				83793BA62433895C007DD493 /* PersonManager.swift */,
 			);
 			path = iMeet;
 			sourceTree = "<group>";
@@ -73,6 +87,26 @@
 				83793B93243376D3007DD493 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		83793B9E24337781007DD493 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				83793BA124337D7C007DD493 /* ViewModifiers */,
+				83793B9F24337799007DD493 /* AddMeetView.swift */,
+				83793BA824338B83007DD493 /* MeetView.swift */,
+				83793BAA243394B3007DD493 /* ImagePicker.swift */,
+				83793BAC2433A9C9007DD493 /* PersonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		83793BA124337D7C007DD493 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				83793BA224337D90007DD493 /* CardBackground.swift */,
+			);
+			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,7 +126,7 @@
 			);
 			name = iMeet;
 			productName = iMeet;
-			productReference = 83793B87243376D2007DD493 /* iMeet.app */;
+			productReference = 83793B87243376D2007DD493 /* iMet.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -146,9 +180,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83793BAD2433A9C9007DD493 /* PersonView.swift in Sources */,
+				83793BA524338481007DD493 /* Person.swift in Sources */,
 				83793B8B243376D2007DD493 /* AppDelegate.swift in Sources */,
+				83793BA72433895C007DD493 /* PersonManager.swift in Sources */,
 				83793B8D243376D2007DD493 /* SceneDelegate.swift in Sources */,
-				83793B8F243376D2007DD493 /* ContentView.swift in Sources */,
+				83793BA924338B83007DD493 /* MeetView.swift in Sources */,
+				83793BAB243394B3007DD493 /* ImagePicker.swift in Sources */,
+				83793BA024337799007DD493 /* AddMeetView.swift in Sources */,
+				83793BA324337D90007DD493 /* CardBackground.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +334,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.amitsamant.iMeet;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iMet;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -314,7 +354,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.amitsamant.iMeet;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iMet;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
