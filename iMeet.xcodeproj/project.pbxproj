@@ -25,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8356AABB24372F1C00500D09 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8377C1A32435B3220068A599 /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
 		8377C1A52435B5A90068A599 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		8377C1A72435BA550068A599 /* UserAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAnnotation.swift; sourceTree = "<group>"; };
@@ -58,6 +59,7 @@
 		83793B7E243376D2007DD493 = {
 			isa = PBXGroup;
 			children = (
+				8356AABB24372F1C00500D09 /* README.md */,
 				83793B89243376D2007DD493 /* iMeet */,
 				83793B88243376D2007DD493 /* Products */,
 			);
