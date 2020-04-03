@@ -9,7 +9,22 @@
 3. [FileManager](https://www.hackingwithswift.com/example-code/system/how-to-read-the-contents-of-a-directory-using-filemanager) api for storing data to document directory
 4. [CoreLocation LocationManager](https://www.hackingwithswift.com/example-code/location/how-to-request-a-users-location-only-once-using-requestlocation) Api for getting current location of user
 
-![](resources/homedelete.png)![](resources/homedeletedark.png)
-![](resources/homeedit.png)![](resources/homeedittdark.png)
-![](resources/add.png)![](resources/adddark.png)
-![](resources/detail.png)![](resources/detaildark.png)
+<p float="center">
+  <img src="resources/homedelete.png" width="400" />
+  <img src="resources/homedeletedark.png" width="400" /> 
+</p>
+
+<p float="center">
+  <img src="resources/homeedit.png" width="400" />
+  <img src="resources/homeedittdark.png" width="400" /> 
+</p>
+
+<p float="center">
+  <img src="resources/add.png" width="400" />
+  <img src="resources/adddark.png" width="400" /> 
+</p>
+
+<p float="center">
+  <img src="resources/detail.png" width="400" />
+  <img src="resources/detaildark.png" width="400" /> 
+</p>
