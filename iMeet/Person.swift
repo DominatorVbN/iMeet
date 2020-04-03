@@ -7,21 +7,22 @@
 //
 
 import SwiftUI
-
+import CoreLocation
 class Person: Codable, ObservableObject, Identifiable {
     var id = UUID()
     var name: String
     var description: String
     var profileImage: UIImage?
+    var location: CLLocationCoordinate2D?
     
-    init(name: String, description: String, profileImage: UIImage? = nil) {
+    init(name: String, description: String, profileImage: UIImage? = nil, location: CLLocationCoordinate2D? = nil) {
         self.name = name
         self.description = description
         self.profileImage = profileImage
     }
     
     enum CodingKeys: CodingKey{
-        case id, name, description, profileImage
+        case id, name, description, profileImage, lattitude, longitude
     }
     
     required init(from decoder: Decoder) throws {
@@ -34,6 +35,19 @@ class Person: Codable, ObservableObject, Identifiable {
         }else{
             self.profileImage = nil
         }
+        
+        guard let lat = try container.decodeIfPresent(Double.self, forKey: .lattitude) else {
+            self.location = nil
+            return
+        }
+        
+        guard let lon = try container.decodeIfPresent(Double.self, forKey: .longitude) else{
+            self.location = nil
+            return
+        }
+        
+        self.location = CLLocationCoordinate2D(latitude: CLLocationDegrees(lat), longitude: CLLocationDegrees(lon))
+        
     }
     
     func encode(to encoder: Encoder) throws {
@@ -44,6 +58,11 @@ class Person: Codable, ObservableObject, Identifiable {
         if let image = profileImage{
             try container.encode(image.jpegData(compressionQuality: 1), forKey: .profileImage)
             
+        }
+        
+        if let location = location{
+            try container.encode(Double(location.latitude), forKey: .lattitude)
+            try container.encode(Double(location.longitude), forKey: .longitude)
         }
     }
 }

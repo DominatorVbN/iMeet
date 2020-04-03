@@ -10,13 +10,18 @@ import SwiftUI
 
 struct CardBackground: ViewModifier{
     @Environment(\.colorScheme) var colorScheme: ColorScheme
+    let color: Color?
+    
+    init(color: Color? = nil) {
+        self.color = color
+    }
     func body(content: Content) -> some View {
         content
         .padding()
         .frame(minWidth: 0, maxWidth: .infinity)
         .background(
             RoundedRectangle(cornerRadius: 8)
-                .fill(colorScheme == ColorScheme.dark ? Color.black : Color.white)
+                .fill(color ?? (colorScheme == ColorScheme.dark ? Color.black : Color.white))
             .shadow(radius: 8)
             
         )
@@ -28,6 +33,9 @@ struct CardBackground: ViewModifier{
 extension View{
     func backgroundCard()-> some View{
         self.modifier(CardBackground())
+    }
+    func backgroundCard(color: Color) -> some View{
+        self.modifier(CardBackground(color: color))
     }
 }
 

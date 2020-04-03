@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8377C1A42435B3220068A599 /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8377C1A32435B3220068A599 /* LocationFetcher.swift */; };
+		8377C1A62435B5A90068A599 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8377C1A52435B5A90068A599 /* MapView.swift */; };
+		8377C1A82435BA550068A599 /* UserAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8377C1A72435BA550068A599 /* UserAnnotation.swift */; };
 		83793B8B243376D2007DD493 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83793B8A243376D2007DD493 /* AppDelegate.swift */; };
 		83793B8D243376D2007DD493 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83793B8C243376D2007DD493 /* SceneDelegate.swift */; };
 		83793B91243376D3007DD493 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83793B90243376D3007DD493 /* Assets.xcassets */; };
@@ -22,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8377C1A32435B3220068A599 /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
+		8377C1A52435B5A90068A599 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		8377C1A72435BA550068A599 /* UserAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAnnotation.swift; sourceTree = "<group>"; };
 		83793B87243376D2007DD493 /* iMet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83793B8A243376D2007DD493 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83793B8C243376D2007DD493 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +83,8 @@
 				83793B92243376D3007DD493 /* Preview Content */,
 				83793BA424338481007DD493 /* Person.swift */,
 				83793BA62433895C007DD493 /* PersonManager.swift */,
+				8377C1A32435B3220068A599 /* LocationFetcher.swift */,
+				8377C1A72435BA550068A599 /* UserAnnotation.swift */,
 			);
 			path = iMeet;
 			sourceTree = "<group>";
@@ -96,6 +104,7 @@
 				83793B9F24337799007DD493 /* AddMeetView.swift */,
 				83793BA824338B83007DD493 /* MeetView.swift */,
 				83793BAA243394B3007DD493 /* ImagePicker.swift */,
+				8377C1A52435B5A90068A599 /* MapView.swift */,
 				83793BAC2433A9C9007DD493 /* PersonView.swift */,
 			);
 			path = Views;
@@ -182,11 +191,14 @@
 			files = (
 				83793BAD2433A9C9007DD493 /* PersonView.swift in Sources */,
 				83793BA524338481007DD493 /* Person.swift in Sources */,
+				8377C1A42435B3220068A599 /* LocationFetcher.swift in Sources */,
+				8377C1A62435B5A90068A599 /* MapView.swift in Sources */,
 				83793B8B243376D2007DD493 /* AppDelegate.swift in Sources */,
 				83793BA72433895C007DD493 /* PersonManager.swift in Sources */,
 				83793B8D243376D2007DD493 /* SceneDelegate.swift in Sources */,
 				83793BA924338B83007DD493 /* MeetView.swift in Sources */,
 				83793BAB243394B3007DD493 /* ImagePicker.swift in Sources */,
+				8377C1A82435BA550068A599 /* UserAnnotation.swift in Sources */,
 				83793BA024337799007DD493 /* AddMeetView.swift in Sources */,
 				83793BA324337D90007DD493 /* CardBackground.swift in Sources */,
 			);

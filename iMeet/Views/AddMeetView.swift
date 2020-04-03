@@ -14,6 +14,7 @@ struct AddMeetView: View {
     @State private var person: Person = Person(name: "", description: "")
     @Environment(\.presentationMode) var presentationMode
     @State private var isShowingPicker = false
+    let locationFetcher = LocationFetcher()
     var body: some View {
         let imageBinding = Binding<UIImage?>(get: {
             self.person.profileImage
@@ -72,6 +73,7 @@ struct AddMeetView: View {
             .navigationBarTitle("Add meet", displayMode: .inline)
             .navigationBarItems(trailing:
                 Button(action: {
+                    self.person.location = self.locationFetcher.lastKnownLocation
                     self.manager.savePerson(person: self.person)
                     self.presentationMode.wrappedValue.dismiss()
                 }, label: {
@@ -81,6 +83,7 @@ struct AddMeetView: View {
                 .sheet(isPresented: $isShowingPicker) {
                     ImagePicker(image: imageBinding)
             }
+            .onAppear(perform: locationFetcher.start)
         }
     }
 }
