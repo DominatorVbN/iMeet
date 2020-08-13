@@ -21,5 +21,4 @@ jobs:
       
     - name: Xcode build
       run: |
-        cd iMeet/
         xcodebuild clean build -scheme iMeet -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.4'
