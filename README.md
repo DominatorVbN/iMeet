@@ -1,5 +1,7 @@
 #  iMet
 
+![Xcode build](https://github.com/DominatorVbN/iMeet/workflows/Xcode%20build/badge.svg?branch=master)
+
 ## [#100DaysOfSwiftUI](https://www.hackingwithswift.com/100/swiftui) Day [77](https://www.hackingwithswift.com/100/swiftui/77) to [78](https://www.hackingwithswift.com/100/swiftui/78) Challenge App
 
 ## Things i used
